@@ -1,13 +1,13 @@
 package objects;
 
-//import objects.interfaces.ICreateable;
-//import objects.interfaces.IRunnable;
+import objects.interfaces.ICreateable;
+import objects.interfaces.IRunnable;
 
-public class Procedure extends QMFObject implements objects.interfaces.ICreateable, objects.interfaces.IRunnable {
+public class Procedure extends QMFObject implements ICreateable, IRunnable {
 	private String procedureText;
+	private static final String type = "procedures";
 	
 	public Procedure(String name, String procedureText) {
-		// TODO Auto-generated constructor stub
 		super (name);
 		this.procedureText = procedureText;
 	}
@@ -26,7 +26,6 @@ public class Procedure extends QMFObject implements objects.interfaces.ICreateab
 	
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
-		return "procedures";
+		return type;
 	}
 }

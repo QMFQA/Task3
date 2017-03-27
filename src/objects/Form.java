@@ -1,11 +1,11 @@
 package objects;
 
-//import objects.interfaces.ICreateable;
+import objects.interfaces.ICreateable;
 
-public class Form extends QMFObject implements objects.interfaces.ICreateable {
-
+public class Form extends QMFObject implements ICreateable {
+	private static final String type = "forms";
+	
 	public Form(String name) {
-		// TODO Auto-generated constructor stub
 		super (name);
 	}
 
@@ -15,7 +15,6 @@ public class Form extends QMFObject implements objects.interfaces.ICreateable {
 
 	@Override
 	public String getType() {
-		// TODO Auto-generated method stub
-		return "forms";
+		return type;
 	}
 }
