@@ -21,13 +21,13 @@ public class Procedure extends QMFObject implements ICreateable, IRunnable {
 	
 	@Override
 	public String getType() {
-		return "Procedures";
+		return "procedures";
 	}
 	
 	@Override
 	public void create()
 	{
-		System.out.println(getKey()+ " with SQL " + getProcedureText() +" is created");
+		System.out.println(getKey()+ " with text \'" + getProcedureText() +"\' is created");
 	}
 
 	@Override

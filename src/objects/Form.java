@@ -10,7 +10,7 @@ public class Form extends QMFObject implements ICreateable{
 
 	@Override
 	public String getType() {
-		return "Form";
+		return "forms";
 	}
 	
 	@Override

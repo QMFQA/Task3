@@ -17,13 +17,13 @@ public class Query extends QMFObject implements ICreateable, IRunnable{
 	@Override
 	public String getType() 
 	{
-		return "Queries";
+		return "queries";
 	}
 	
 	@Override
 	public void create()
 	{
-	System.out.println(getKey()+ " with SQL " + getQueryText() +" is created");
+	System.out.println(getKey()+ " with SQL \'" + getQueryText() +"\' is created");
 	}
 	
 	@Override
