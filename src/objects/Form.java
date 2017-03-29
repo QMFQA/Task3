@@ -20,3 +20,4 @@ public class Form extends QMFObject implements ICreateable {
 		return getKey() + " is created";
 	}
 }
+

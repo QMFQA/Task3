@@ -6,6 +6,7 @@ import objects.interfaces.IRunnable;
 public class Procedure extends QMFObject implements ICreateable, IRunnable {
 	
 	private String value;
+	
 	private String type;
 
 	public Procedure(String name, String value) {
@@ -31,3 +32,4 @@ public class Procedure extends QMFObject implements ICreateable, IRunnable {
 		return getType() + ":/" + getName() + "is run";
 	}
 }
+

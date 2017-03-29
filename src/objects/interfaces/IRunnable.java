@@ -4,3 +4,4 @@ public interface IRunnable {
 	
 	public String run();
 }
+

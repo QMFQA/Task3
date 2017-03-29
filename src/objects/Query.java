@@ -32,3 +32,4 @@ public class Query extends QMFObject implements ICreateable, IRunnable {
 	}
 
 }
+
