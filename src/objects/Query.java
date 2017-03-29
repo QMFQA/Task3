@@ -23,12 +23,12 @@ public class Query extends QMFObject implements ICreateable, IRunnable {
 		return type;
 	}
 	
-	public String create() {
-		return getKey() + " with SQL " + getValue() + " is created";
+	public void create() {
+		System.out.println(getKey() + " with SQL " + getValue() + " is created");
 	}
 	
-	public String run() {
-		return getType() + ":/" + getName() + "is run";
+	public void run() {
+		System.out.println(getType() + ":/" + getName() + " is run");
 	}
 
 }

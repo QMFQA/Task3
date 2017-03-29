@@ -24,12 +24,12 @@ public class Procedure extends QMFObject implements ICreateable, IRunnable {
 		return type;
 	}
 	
-	public String create() {
-		return getKey() + " with text " + getValue() + " is created";
+	public void create() {
+		System.out.println(getKey() + " with text " + getValue() + " is created");
 	}
 	
-	public String run() {
-		return getType() + ":/" + getName() + "is run";
+	public void run() {
+		System.out.println(getType() + ":/" + getName() + " is run");
 	}
 }
 

@@ -16,8 +16,8 @@ public class Form extends QMFObject implements ICreateable {
 		return type;
 	}
 	
-	public String create() {
-		return getKey() + " is created";
+	public void create() {
+		System.out.println(getKey() + " is created");
 	}
 }
 
