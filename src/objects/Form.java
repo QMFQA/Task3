@@ -17,7 +17,7 @@ public class Form extends QMFObject implements ICreateable
 
 	@Override
 	public void create() {
-		System.out.println(getType() + ":/" + getName() + " is created");		
+		System.out.println(getKey() + " is created");		
 	}
 
 }

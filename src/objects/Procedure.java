@@ -23,13 +23,13 @@ public class Procedure extends QMFObject implements ICreateable, IRunnable
 
 	@Override
 	public void create() {
-		System.out.println(getType() + ":/" + getName() + " with text '" + proc_text + "' is created");
+		System.out.println(getKey() + " with text '" + proc_text + "' is created");
 		
 	}
 
 	@Override
 	public void run() {
-		System.out.println(getType() + ":/" + getName() + " is run");		
+		System.out.println(getKey() + " is run");		
 	}
 
 }

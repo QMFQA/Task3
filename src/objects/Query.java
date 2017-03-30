@@ -26,13 +26,13 @@ public class Query extends QMFObject implements ICreateable, IRunnable
 	@Override
 	public void create() {
 		
-		System.out.println(getType() + ":/" + getName() + " with SQL '" + query_sql + "' is created");
+		System.out.println(getKey() + " with SQL '" + query_sql + "' is created");
 		
 	}
 
 	@Override
 	public void run() {
-		System.out.println(getType() + ":/" + getName() + " is run");
+		System.out.println(getKey() + " is run");
 		
 	}
 
