@@ -19,3 +19,4 @@ public abstract class QMFObject {
 	public abstract String getType();
 	
 }
+
